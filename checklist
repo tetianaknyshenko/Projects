@@ -1,13 +1,13 @@
 ##Here's a checklist for creating an exceptional exploratory data analysis:
 
-#Data Understanding and Exploration: 
+# Data Understanding and Exploration: 
 The learner should demonstrate a deep understanding of the data and the problem being explored. The following should be included:
 
 A detailed exploration of the data using summary statistics to answer key questions.
 
 An interpretation of results from descriptive statistics of the data was provided
 
-#Data Visualizations: The learner should effectively use appropriate visualizations to explore the data and communicate insights. The following should be included:
+# Data Visualizations: The learner should effectively use appropriate visualizations to explore the data and communicate insights. The following should be included:
 
 Clear, well-designed visualizations that effectively communicate key insights
 
@@ -15,7 +15,7 @@ Appropriate visualizations for the type of data being analyzed
 
 Thoughtful design choices, including appropriate labeling, color choices, and formatting 
 
-#Insights and Conclusions: The learner should draw insightful conclusions from the data and effectively communicate those conclusions. The following should be included:
+# Insights and Conclusions: The learner should draw insightful conclusions from the data and effectively communicate those conclusions. The following should be included:
 
 Clear and well-supported conclusions that provide meaningful insights into the problem being explored
 
