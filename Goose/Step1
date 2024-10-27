@@ -1,0 +1,49 @@
+import pygame
+from pygame.constants import QUIT
+pygame.init()
+FPS=pygame.time.Clock()
+height=800
+width=1200
+main_display=pygame.display.set_mode((width,height))
+pygame.display.set_caption("Pygame Гусак")
+
+Color_White=(255,255,255)
+Color_Black=(0,0,0)
+
+Player_Size=(10,10)
+player = pygame.Surface(Player_Size)
+player.fill(Color_White)
+player_rect=player.get_rect()
+player_speed = [1,1]
+
+playing = True
+
+while playing :
+    FPS.tick(60)
+    
+    for event in pygame.event.get():
+        if event.type == QUIT:
+            playing=False
+            pygame.quit()
+    
+    print(player_rect.bottom, player_rect.right)
+    main_display.fill(Color_Black)
+    if player_rect.bottom>=height:
+        player_speed[1]=-player_speed[1] #[1,-1]
+    
+    if player_rect.right>=width:
+        player_speed[0]=-player_speed[0]#[-1,-1]
+    
+    if player_rect.bottom<=0:
+        player_speed[1]=-player_speed[1]#[-1,1]
+    
+    if player_rect.right<=0:
+        player_speed[0]=-player_speed[0]#[1,1]
+    
+    main_display.blit(player, player_rect)
+
+    
+    player_rect = player_rect.move(player_speed)
+    
+
+    pygame.display.flip()
